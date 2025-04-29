@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Created Successfully</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f8f8f8;
+        }
+        .email-container {
+          width: 100%;
+          max-width: 600px;
+          margin: 0 auto;
+          background-color: #ffffff;
+          border: 1px solid #e0e0e0;
+          padding: 20px;
+        }
+        .header {
+          text-align: center;
+          background-color: #FF0000;
+          color: white;
+          padding: 10px;
+        }
+        .content {
+          padding: 20px;
+          color: #333;
+        }
+        .button {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #FF0000;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: bold;
+          margin-top: 20px;
+        }
+        .footer {
+          text-align: center;
+          padding: 10px;
+          font-size: 12px;
+          color: #888;
+        }
+        .footer a {
+          color: #888;
+          text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="email-container">
+    <div class="header">
+        <h2>Welcome to [[${platformName}]]!</h2>
+    </div>
+
+    <div class="content">
+        <p>Hello [[${userName}]],</p>
+        <p>Congratulations! Your account has been successfully created.</p>
+        <p>Thank you for joining [Your Platform Name]. Now, you're all set to explore exciting content, upload videos, and interact with others.</p>
+
+        <a href="[Your Website Link]" class="button">Go to Dashboard</a>
+
+        <p>If you need help or have any questions, feel free to reach out to our support team.</p>
+        <p>Best regards,</p>
+        <p>The [Your Platform Name] Team</p>
+    </div>
+
+    <div class="footer">
+        <p>You're receiving this email because you registered on [Your Platform Name].</p>
+        <p>If you didn’t create this account, please <a href="[Your Support Link]">contact support</a> immediately.</p>
+    </div>
+</div>
+
+</body>
+</html>

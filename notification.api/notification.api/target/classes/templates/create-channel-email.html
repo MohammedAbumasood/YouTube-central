@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Channel Created Successfully</title>
+  <style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+    }
+    .email-container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .header {
+        background-color: #007bff;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px;
+        border-radius: 8px 8px 0 0;
+    }
+    .content {
+        padding: 20px;
+        color: #333333;
+    }
+    .button {
+        display: inline-block;
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 12px 20px;
+        text-decoration: none;
+        border-radius: 6px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .footer {
+        font-size: 12px;
+        color: #888888;
+        text-align: center;
+        margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="email-container">
+  <div class="header">
+    <h2>🎉 Channel Created Successfully!</h2>
+  </div>
+  <div class="content">
+    <p>Hello <strong>[[${userName}]]</strong>,</p>
+    <p>Congratulations! You've successfully created your channel on <strong>[[${platformName}]]</strong>.</p>
+    <p>You can now start uploading videos, managing content, and growing your audience!</p>
+
+    <a href="[Your Channel Link]" class="button">Go to My Channel</a>
+
+    <p>If you have any questions or need support, feel free to contact us anytime.</p>
+    <p>Cheers,</p>
+    <p>The ${platform} Team</p>
+  </div>
+  <div class="footer">
+    <p>You received this email because you created a channel on ${platform}.</p>
+  </div>
+</div>
+
+</body>
+</html>

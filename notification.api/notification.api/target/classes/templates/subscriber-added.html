@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>New Subscriber Alert</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      background-color: #ffffff;
+      margin: 40px auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      background-color: #ff0000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .content {
+      padding: 30px;
+      color: #333333;
+    }
+    .footer {
+      background-color: #eeeeee;
+      padding: 15px;
+      text-align: center;
+      font-size: 12px;
+      color: #777777;
+    }
+    .highlight {
+      color: #ff0000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h2>🎉 New Subscriber Alert!</h2>
+  </div>
+  <div class="content">
+    <p>Hi <span class="highlight">${name}</span>,</p>
+    <p>Good news! Your channel just gained a new subscriber. 🙌</p>
+    <p>Keep creating awesome content and growing your audience.</p>
+
+    <p><strong>Channel Name:</strong> <span class="highlight">[[${channelName}]]</span></p>
+    <p><strong>Total Subscribers:</strong> (optional — if you're tracking this)</p>
+
+    <p>Thanks for being a part of <span class="highlight">[[${platformName}]]</span>!</p>
+
+    <p>Best regards,<br/>The [[${platformName}]] Team</p>
+  </div>
+  <div class="footer">
+    You received this email because you're subscribed as a content creator on [[${platformName}]].
+  </div>
+</div>
+
+</body>
+</html>
